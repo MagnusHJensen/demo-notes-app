@@ -1,0 +1,23 @@
+type Query {
+  listNotes: [Note]
+  getNoteById(filter: NoteFilterInput!): Note
+}
+
+type Mutation {
+  createNote(note: NoteInput!): Note
+  deleteNote(filter: NoteFilterInput!): Boolean
+  updateNote(id: String!, note: NoteInput!): String
+}
+
+type Note {
+  id: String!
+  content: String!
+}
+
+input NoteFilterInput {
+  noteId: String!
+}
+
+input NoteInput {
+  content: String!
+}

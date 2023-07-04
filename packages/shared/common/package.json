@@ -1,0 +1,13 @@
+{
+  "name": "@notes/common",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "vitest": "^0.32.2"
+  },
+  "dependencies": {}
+}

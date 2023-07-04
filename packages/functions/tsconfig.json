@@ -3,9 +3,19 @@
   "compilerOptions": {
     "module": "esnext",
     "moduleResolution": "node",
+    "composite": true,
+    "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "@notes/core/*": ["../core/src/*"]
+      "@notes/core": ["../core/src/*"]
     }
-  }
+  },
+  "references": [
+    {
+      "path": "../core"
+    },
+    {
+      "path": "../graphql"
+    }
+  ]
 }

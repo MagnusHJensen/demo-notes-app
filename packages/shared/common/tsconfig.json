@@ -4,6 +4,10 @@
     "module": "esnext",
     "moduleResolution": "node",
     "composite": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@notes/core": ["../core/src/*"]
+    }
   }
 }

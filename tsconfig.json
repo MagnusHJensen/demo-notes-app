@@ -3,5 +3,19 @@
   "exclude": ["packages"],
   "compilerOptions": {
     "moduleResolution": "node"
-  }
+  },
+  "references": [
+    {
+      "path": "./packages/core"
+    },
+    {
+      "path": "./packages/functions"
+    },
+    {
+      "path": "./packages/graphql"
+    },
+    {
+      "path": "./packages/shared/common"
+    }
+  ]
 }

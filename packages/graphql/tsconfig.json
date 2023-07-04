@@ -4,6 +4,8 @@
     "module": "esnext",
     "moduleResolution": "node",
     "composite": true,
-    "outDir": "dist"
-  }
+    "outDir": "dist",
+    "baseUrl": "."
+  },
+  "include": ["src"]
 }

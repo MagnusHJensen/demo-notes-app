@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "sst dev",
     "build": "sst build",
+    "build:tsc": "tsc --build packages/*",
     "deploy": "sst deploy",
     "remove": "sst remove",
     "console": "sst console",

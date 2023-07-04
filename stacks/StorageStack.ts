@@ -4,14 +4,12 @@ import { Bucket, StackContext, Table } from "sst/constructs";
 export function StorageStack({ stack, app }: StackContext) {
   const bucket = new Bucket(stack, "Uploads");
 
-  const table = new Table(stack, "Notes", {
+  const table = new Table(stack, "notes-notes", {
     fields: {
-      userId: "string",
-      noteId: "string",
+      id: "string",
     },
     primaryIndex: {
-      partitionKey: "userId",
-      sortKey: "noteId",
+      partitionKey: "id",
     },
   });
 
